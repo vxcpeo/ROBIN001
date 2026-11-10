@@ -21,7 +21,6 @@ import { listWallets } from '../lib/chain.js';
 
 const route = useRoute();
 const cfg = computed(() => runtime.config);
-const ca = computed(() => runtime.live.ca || '');
 const view = computed(() => (route.name === 'send' || route.name === 'pay') ? 'send' : route.name === 'inbox' ? 'inbox' : 'receive');
 const pane = computed(() => view.value === 'send' ? SendPane : view.value === 'inbox' ? InboxPane : ReceivePane);
 const badge = computed(() => inboxCount());
@@ -87,11 +86,6 @@ onBeforeUnmount(() => { mounted = false; document.body.classList.remove('tc-cons
   <div class="tc-app">
     <header class="tc-term" role="banner">
       <Brand />
-      <span class="tc-term__ca">
-        <b>CA</b>
-        <span class="tc-mono">{{ short(ca) }}</span>
-        <button type="button" aria-label="Copy contract address" @click="copy(ca, 'Contract address copied')"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></button>
-      </span>
       <span class="tc-term__glyphs">
         <a class="tc-glyph" :href="cfg.x" target="_blank" rel="noopener" aria-label="Receiva on X"><XIcon /></a>
         <a class="tc-glyph" :href="cfg.telegram" target="_blank" rel="noopener" aria-label="Receiva on Telegram"><TelegramIcon /></a>

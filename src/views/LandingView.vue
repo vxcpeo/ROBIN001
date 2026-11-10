@@ -319,13 +319,6 @@ onBeforeUnmount(() => {
   <div class="tc-land" id="top">
     <header class="tc-term" role="banner" :class="{ 'tc-term--solid': navSolid }">
       <Brand />
-      <span class="tc-term__ca">
-        <b>{{ ca ? 'CA' : 'LAUNCH' }}</b>
-        <span class="tc-mono">{{ ca ? short(ca) : '19 Oct · 13:00 UTC' }}</span>
-        <button v-if="ca" type="button" aria-label="Copy contract address" @click="copy(ca, 'Contract address copied')">
-          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
-        </button>
-      </span>
       <span class="tc-term__glyphs">
         <a class="tc-glyph" :href="cfg.x" target="_blank" rel="noopener" aria-label="Receiva on X"><XIcon /></a>
         <a class="tc-glyph" :href="cfg.telegram" target="_blank" rel="noopener" aria-label="Receiva on Telegram"><TelegramIcon /></a>

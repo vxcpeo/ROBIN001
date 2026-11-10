@@ -1883,3 +1883,6 @@ code { letter-spacing: -0.01em; }
 /* embed preview: each badge sits on the background it was designed for */
 .tc-badges img:first-child { background: #0a0b0d; padding: 7px 11px; border-radius: 8px; }
 .tc-badges img:last-child { background: #f2f5f8; padding: 7px 11px; border-radius: 8px; }
+
+/* social glyphs take the space the CA chip used to occupy */
+.tc-term__glyphs { margin-left: auto; }

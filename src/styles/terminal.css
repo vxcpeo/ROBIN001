@@ -1170,7 +1170,7 @@ code { letter-spacing: -0.01em; }
   border-top: 1px solid var(--line);
   padding: 26px var(--page-pad) 34px;
   display: grid;
-  grid-template-columns: minmax(200px, 1.1fr) repeat(3, minmax(120px, 0.6fr)) minmax(160px, 0.9fr);
+  grid-template-columns: minmax(200px, 1.1fr) repeat(3, minmax(120px, 0.6fr));
   gap: 18px;
   align-items: start;
   background: rgba(5, 9, 13, 0.9);

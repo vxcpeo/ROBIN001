@@ -2,7 +2,7 @@
 import { ref, reactive, computed, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { runtime } from '../lib/chain.js';
 import { apiToken, fmtUsd, fmtNum, fmtEth, ago } from '../lib/runtime.js';
-import { copy, short } from '../lib/ui.js';
+import { short } from '../lib/ui.js';
 
 const cfg = computed(() => runtime.config);
 const ex = computed(() => cfg.value.explorer || 'https://robinhoodchain.blockscout.com');
@@ -194,7 +194,6 @@ onBeforeUnmount(() => { ro?.disconnect(); clearInterval(timer); });
       <div class="tc-token-side">
         <article class="tc-panel">
           <span class="tc-label"><i class="tc-dot tc-dot--ok"></i> On-chain facts</span>
-          <div class="tc-row"><span>Contract</span><span class="tc-ca-inline"><a class="tc-mono" :href="links.token" target="_blank" rel="noopener">{{ ca ? short(ca) + ' ↗' : '—' }}</a><button type="button" class="tc-copy" aria-label="Copy contract address" @click="copy(ca, 'Contract address copied')"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></button></span></div>
           <div class="tc-row"><span>Network</span><b>Robinhood Chain</b></div>
           <div class="tc-row"><span>Launchpad</span><b>Pons V2</b></div>
           <div class="tc-row"><span>Supply</span><b>{{ fmtNum(data.value?.supply) }}</b></div>

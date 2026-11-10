@@ -8,7 +8,7 @@ import SiteFooter from '../components/SiteFooter.vue';
 import TokenSection from '../components/TokenSection.vue';
 import { runtime, STOCKS } from '../lib/chain.js';
 import { apiStats } from '../lib/runtime.js';
-import { copy, short, reducedMotion, clamp, ease } from '../lib/ui.js';
+import { short, reducedMotion, clamp, ease } from '../lib/ui.js';
 import { createVault } from '../lib/vault3d.js';
 
 const cfg = computed(() => runtime.config);
@@ -596,12 +596,6 @@ onBeforeUnmount(() => {
         <article class="tc-card">
           <div class="tc-row"><span class="tc-token-tick">$RECEIVA</span><span class="tc-pill" :class="{ 'tc-pill--ok': statusLive }"><span class="tc-dot" :class="{ 'tc-dot--ok': statusLive }"></span> <span>{{ statusLive ? 'Live on Pons' : 'Launch 19 Oct · 13:00 UTC' }}</span></span></div>
           <div class="tc-big">{{ countdown.main }} <small>{{ countdown.small }}</small></div>
-          <span class="tc-label">Contract address</span>
-          <div class="tc-linkline">
-            <code class="tc-linkline__url">{{ ca || 'Appears here at launch' }}</code>
-            <button v-if="ca" type="button" class="tc-copy" aria-label="Copy contract address" @click="copy(ca, 'Contract address copied')"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></button>
-          </div>
-          <p class="tc-note">Verify this address before you buy. We only post it here and on <a :href="cfg.x" target="_blank" rel="noopener">@receiva_rh</a>.</p>
           <div class="tc-acts-row">
             <a class="tc-btn tc-btn--sm tc-btn--go" :href="links.pons" :aria-disabled="!ca" target="_blank" rel="noopener">Buy on Pons</a>
             <a class="tc-btn tc-btn--sm" :href="links.dex" :aria-disabled="!ca" target="_blank" rel="noopener">Chart</a>

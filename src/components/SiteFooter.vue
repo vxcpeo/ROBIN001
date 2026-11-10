@@ -39,10 +39,6 @@ const ca = computed(() => runtime.live.ca || '');
       <a :href="ca ? `https://www.ponsfamily.com/launchpad/${ca.toLowerCase()}` : undefined" target="_blank" rel="noopener">Pons</a>
       <a :href="ca ? `https://dexscreener.com/robinhood/${ca.toLowerCase()}` : undefined" target="_blank" rel="noopener">DexScreener</a>
     </div>
-    <div class="tc-foot__ca">
-      <span class="tc-label">$RECEIVA contract</span>
-      <code>{{ ca || 'Appears here at launch' }}</code>
-    </div>
     <p class="tc-foot__note">Receiva is open-source software, not a bank or broker. Amounts and senders remain public on-chain. Not financial advice. Unaudited; use at your own risk.</p>
     <div class="tc-foot__word" aria-hidden="true">Receiva</div>
   </div>

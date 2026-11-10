@@ -14,7 +14,7 @@
   "walletRpc": "https://rpc.mainnet.chain.robinhood.com",
   "announcer": "0x55649E01B5Df198D18D95b5cc5051630cfD45564",
   "registry": "0x6538E6bf4B0eBd30A8Ea093027Ac2422ce5d6538",
-  "router": "",
+  "router": "0x5A254fE1f65e5cbBe978095ab4632E7446Bd8590",
   "startBlock": 16159684,
   "gasTipEth": "0.00002",
   "site": "https://receiva.xyz",
@@ -35,18 +35,11 @@
   "github": "https://github.com/receivapro/receiva",
   "token": {
     "ca": "0xd113264443Ce28135d789b5638e0c6b730BE8107",
-    "curve": "0xad1d608d64830f58671e975c48fd50f415a66c22",
-    "launchBlock": 92634745,
+    "curve": "0x5eb21578d12ef22bcb4c0570e99c91f134886b40",
+    "launchBlock": 110725617,
     "launchSupply": 1000000000,
     "graduationEth": 4.2,
     "creatorTaxBps": 200,
-    "launchpad": "Pons V2",
-    "dev": "0x88d62da19088a106aa76e9a2fbb2c02f00c2be2d",
-    "devBuyTx": "0x8aadf2da36731e77cbb9d903608e32130cbe1efd65f54c1ad516c68a26fe4e1c",
-    "burnTxs": [
-      "0x102bef32324e6c1cf8054af59404fc03e2dcb8dd13b489307488829f40f573b8",
-      "0x138838ce6f7b41f724e2b42b51167d0ce13c7089c1dafb8361063a0bf5cc299e"
-    ],
-    "devBurned": 19586101.93
+    "launchpad": "Pons V2"
   }
 }

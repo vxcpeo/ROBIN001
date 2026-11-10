@@ -197,8 +197,6 @@ onBeforeUnmount(() => { ro?.disconnect(); clearInterval(timer); });
           <div class="tc-row"><span>Network</span><b>Robinhood Chain</b></div>
           <div class="tc-row"><span>Launchpad</span><b>Pons V2</b></div>
           <div class="tc-row"><span>Supply</span><b>{{ fmtNum(data.value?.supply) }}</b></div>
-          <div class="tc-row"><span>Dev buy</span><span><b><span>{{ fmtNum(T.devBurned) }}</span> burned</b><small><a :href="links.devBuy" target="_blank" rel="noopener">buy ↗</a> <a :href="links.burn1" target="_blank" rel="noopener">burn 1 ↗</a> <a :href="links.burn2" target="_blank" rel="noopener">burn 2 ↗</a></small></span></div>
-          <div class="tc-row"><span>Dev wallet holds</span><a class="tc-good" :href="links.dev" target="_blank" rel="noopener">0 Receiva ↗</a></div>
           <div class="tc-row"><span>Creator tax</span><b><span>{{ T.creatorTaxBps ? (T.creatorTaxBps / 100).toFixed(0) : 2 }}%</span> buy and sell, fixed at launch</b></div>
           <div class="tc-acts-row"><a class="tc-btn tc-btn--sm tc-btn--go" :href="links.pons" target="_blank" rel="noopener">Buy on Pons</a><a class="tc-btn tc-btn--sm" :href="links.dex" target="_blank" rel="noopener">DexScreener</a></div>
         </article>

@@ -11,13 +11,13 @@ const fakeTx = '0x' + 'ab'.repeat(32);
 const blockNumber = '0x5a1b2c3d';
 const receipt = {
   transactionHash: fakeTx, transactionIndex: '0x0', blockHash: '0x' + 'cd'.repeat(32), blockNumber, from: account,
-  to: '0x5a254fe1f65e5cbbe978095ab4632e7446bd8590', cumulativeGasUsed: '0x5208', gasUsed: '0x5208',
+  to: '', cumulativeGasUsed: '0x5208', gasUsed: '0x5208',
   contractAddress: null, logs: [], logsBloom: '0x' + '00'.repeat(256), status: '0x1', type: '0x2',
   effectiveGasPrice: '0x3b9aca00', root: '0x' + '00'.repeat(32),
 };
 const tx = {
   hash: fakeTx, blockHash: '0x' + 'cd'.repeat(32), blockNumber, transactionIndex: '0x0', from: account,
-  to: '0x5a254fe1f65e5cbbe978095ab4632e7446bd8590', value: '0x2386f26fc10000', gas: '0x5208',
+  to: '', value: '0x2386f26fc10000', gas: '0x5208',
   gasPrice: '0x3b9aca00', input: '0x', nonce: '0x0', type: '0x2',
 };
 
@@ -72,12 +72,12 @@ async function installMock(page) {
         if (method === 'eth_getTransactionCount') return '0x0';
         if (method === 'eth_getTransactionReceipt') return {
           transactionHash: '0x' + 'ab'.repeat(32), transactionIndex: '0x0', blockHash: '0x' + 'cd'.repeat(32), blockNumber: '0x5a1b2c3d', from: account,
-          to: '0x5a254fe1f65e5cbbe978095ab4632e7446bd8590', cumulativeGasUsed: '0x5208', gasUsed: '0x5208', contractAddress: null,
+          to: '', cumulativeGasUsed: '0x5208', gasUsed: '0x5208', contractAddress: null,
           logs: [], logsBloom: '0x' + '00'.repeat(256), status: '0x1', type: '0x2', effectiveGasPrice: '0x3b9aca00', root: '0x' + '00'.repeat(32),
         };
         if (method === 'eth_getTransactionByHash') return {
           hash: '0x' + 'ab'.repeat(32), blockHash: '0x' + 'cd'.repeat(32), blockNumber: '0x5a1b2c3d', transactionIndex: '0x0', from: account,
-          to: '0x5a254fe1f65e5cbbe978095ab4632e7446bd8590', value: '0x2386f26fc10000', gas: '0x5208', gasPrice: '0x3b9aca00', input: '0x', nonce: '0x0', type: '0x2',
+          to: '', value: '0x2386f26fc10000', gas: '0x5208', gasPrice: '0x3b9aca00', input: '0x', nonce: '0x0', type: '0x2',
         };
         if (method === 'eth_getBlockByNumber') return { number: '0x5a1b2c3d', hash: '0x' + 'cd'.repeat(32), parentHash: '0x' + '00'.repeat(32), timestamp: '0x68f80000', baseFeePerGas: '0x3b9aca00', gasLimit: '0x1c9c380', gasUsed: '0x5208', miner: '0x' + '00'.repeat(20), difficulty: '0x0', extraData: '0x', transactions: [], nonce: '0x0000000000000000', mixHash: '0x' + '00'.repeat(32), stateRoot: '0x' + '00'.repeat(32), receiptsRoot: '0x' + '00'.repeat(32), logsBloom: '0x' + '00'.repeat(256), sha3Uncles: '0x' + '00'.repeat(32), size: '0x1', totalDifficulty: '0x0', uncles: [] };
         throw new Error('Unsupported mock method: ' + method);

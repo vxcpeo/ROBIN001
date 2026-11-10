@@ -64,6 +64,32 @@ Environment variables:
 
 The server seeds itself from the bundled snapshot on first run, then extends the index from the live chain. If the RPC is unreachable it keeps serving the snapshot.
 
+## Deploy on Vercel
+
+Vue Router runs in history mode, so the host must serve `index.html` for unknown paths. Vercel does not do that by default: `/` works while `/receive`, `/send`, `/inbox`, `/transparency` and `/pay/…` return `404 NOT_FOUND`.
+
+[`vercel.json`](vercel.json) fixes it:
+
+```json
+{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
+```
+
+Static files are matched before rewrites are applied, so `/assets/*` (hashed bundles and brand assets), `/config.json`, `/live.json` and `/fallback/*.json` keep being served as themselves; only paths with no file fall through to the app shell.
+
+Project settings:
+
+| Setting | Value |
+|---|---|
+| Root Directory | `website` |
+| Framework Preset | Vite (build `npm run build`, output `dist`) |
+
+A second `vercel.json` sits at the repository root with the same rewrite, for the case where the Vercel project uses the repository root as its Root Directory and sets the build command to `cd website && npm install && npm run build` with output `website/dist`.
+
+The optional indexer (`server/server.mjs`) is not deployed here. On Vercel `/api/*` has no handler, so `src/lib/runtime.js` falls back to the bundled `public/fallback/*.json` snapshots: the counters and token chart render, but they are a snapshot rather than live data.
+
+Verify a deployment by opening `https://<domain>/receive` directly, not by clicking through from `/` — a hard load is what the rewrite covers.
+
+
 ## Project layout
 
 ```

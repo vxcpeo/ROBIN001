@@ -33,7 +33,7 @@ const ca = computed(() => runtime.live.ca || '');
     </div>
     <div class="tc-foot__col" role="group" aria-label="Official links">
       <span class="tc-label">Official links</span>
-      <a :href="cfg.x" target="_blank" rel="noopener">X · @receiva</a>
+      <a :href="cfg.x" target="_blank" rel="noopener">X · @receiva_rh</a>
       <a :href="cfg.telegram" target="_blank" rel="noopener">Telegram</a>
       <a :href="cfg.github" target="_blank" rel="noopener">GitHub</a>
       <a :href="ca ? `https://www.ponsfamily.com/launchpad/${ca.toLowerCase()}` : undefined" target="_blank" rel="noopener">Pons</a>

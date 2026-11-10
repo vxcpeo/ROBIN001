@@ -18,7 +18,7 @@ const FALLBACK_CONFIG = {
   startBlock: 16159684,
   gasTipEth: '0.00002',
   site: 'https://receiva.xyz',
-  x: 'https://x.com/receiva',
+  x: 'https://x.com/receiva_rh',
   telegram: 'https://t.me/receiva',
   github: 'https://github.com/receivapro/receiva',
   proof: {},

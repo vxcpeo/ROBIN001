@@ -21,6 +21,7 @@ const now = ref(Date.now());
 const stats = reactive({ viaReceiva: null, announcements: null, head: null });
 const flash = reactive({ viaReceiva: false, announcements: false });
 const routerBalance = ref('0.000000');
+const routerBlock = ref(null);
 const scene = ref(null);
 const storyEl = ref(null);
 const statementEl = ref(null);
@@ -123,6 +124,16 @@ async function pollRouterBalance() {
       const j = await r.json();
       if (j.result == null) continue;
       routerBalance.value = (Number(BigInt(j.result)) / 1e18).toFixed(6);
+      try {
+        const headRes = await fetch(rpc, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'eth_blockNumber', params: [] }),
+          signal: AbortSignal.timeout(8000),
+        });
+        const headJson = await headRes.json();
+        if (headJson.result) routerBlock.value = Number(BigInt(headJson.result));
+      } catch { /* keep the last block we saw */ }
       return;
     } catch { /* try the next RPC */ }
   }
@@ -602,6 +613,7 @@ onBeforeUnmount(() => {
           <span class="tc-label"><span class="tc-dot tc-dot--plate"></span> Live balance</span>
           <h3>Funds held by Receiva</h3>
           <div class="tc-big">{{ routerBalance }} <small>ETH</small></div>
+          <div class="tc-read" v-if="routerBlock">block {{ routerBlock.toLocaleString('en-US') }}</div>
           <p>Read from the chain every few seconds. Payments go straight from the sender to a one-time address. Nothing waits in a pool.</p>
           <a class="tc-side-more" :href="links.routerBalance" target="_blank" rel="noopener">Check it on Blockscout ↗</a>
         </article>

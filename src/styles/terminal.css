@@ -1886,3 +1886,12 @@ code { letter-spacing: -0.01em; }
 
 /* social glyphs take the space the CA chip used to occupy */
 .tc-term__glyphs { margin-left: auto; }
+
+/* live-read marker under a chain value */
+.tc-read {
+  margin: -2px 0 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}

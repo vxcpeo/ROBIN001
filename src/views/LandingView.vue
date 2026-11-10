@@ -596,11 +596,6 @@ onBeforeUnmount(() => {
         <article class="tc-card">
           <div class="tc-row"><span class="tc-token-tick">$RECEIVA</span><span class="tc-pill" :class="{ 'tc-pill--ok': statusLive }"><span class="tc-dot" :class="{ 'tc-dot--ok': statusLive }"></span> <span>{{ statusLive ? 'Live on Pons' : 'Launch 19 Oct · 13:00 UTC' }}</span></span></div>
           <div class="tc-big">{{ countdown.main }} <small>{{ countdown.small }}</small></div>
-          <div class="tc-acts-row">
-            <a class="tc-btn tc-btn--sm tc-btn--go" :href="links.pons" :aria-disabled="!ca" target="_blank" rel="noopener">Buy on Pons</a>
-            <a class="tc-btn tc-btn--sm" :href="links.dex" :aria-disabled="!ca" target="_blank" rel="noopener">Chart</a>
-            <a class="tc-btn tc-btn--sm" :href="links.token" :aria-disabled="!ca" target="_blank" rel="noopener">Contract</a>
-          </div>
         </article>
 
         <article class="tc-panel tc-panel--deep">

@@ -1,0 +1,3839 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-10T06:48:43.824Z",
+  "project": {
+    "root": "E:/workspace/chuangye/ROBIN/ROBIN001/website",
+    "name": "receiva-website",
+    "vueVersion": "3.5.13",
+    "nuxt": false,
+    "dependencies": [
+      "@noble/curves",
+      "@noble/hashes",
+      "@vitejs/plugin-vue",
+      "ethers",
+      "playwright-core",
+      "qrcode-generator",
+      "three",
+      "vite",
+      "vue",
+      "vue-router"
+    ],
+    "packageManager": "npm",
+    "scripts": {
+      "dev": "vite --host 127.0.0.1 --port 5180",
+      "build": "vite build",
+      "preview": "vite preview --host 127.0.0.1 --port 5181",
+      "start": "node server/server.mjs",
+      "test": "node --test tests/stealth.test.mjs"
+    },
+    "frameworks": []
+  },
+  "stats": {
+    "filesScanned": 30,
+    "vueFiles": 20,
+    "routes": 8,
+    "staticTextTokens": 475,
+    "bindingTokens": 250,
+    "eventTokens": 42,
+    "classNames": 245,
+    "colors": 103
+  },
+  "routes": [
+    {
+      "path": "/",
+      "dynamic": false
+    },
+    {
+      "path": "/app",
+      "dynamic": false
+    },
+    {
+      "path": "/app/",
+      "dynamic": false
+    },
+    {
+      "path": "/inbox",
+      "dynamic": false
+    },
+    {
+      "path": "/pay/:recipient",
+      "dynamic": true
+    },
+    {
+      "path": "/receive",
+      "dynamic": false
+    },
+    {
+      "path": "/send",
+      "dynamic": false
+    },
+    {
+      "path": "/transparency",
+      "dynamic": false
+    }
+  ],
+  "unresolvedRoutes": [],
+  "archetype": {
+    "id": "sidebar-workspace",
+    "family": "shell",
+    "traits": {
+      "sidebar": true,
+      "topbar": false,
+      "cards": true,
+      "hero": true,
+      "table": true,
+      "grid": true,
+      "tabs": true,
+      "modal": true,
+      "charts": true,
+      "sticky": true,
+      "orbital": false,
+      "terminal": false,
+      "bento": false,
+      "ticker": false,
+      "gallery": false
+    }
+  },
+  "palette": [
+    {
+      "hex": "#ffffff",
+      "count": 38
+    },
+    {
+      "hex": "#0a0b0d",
+      "count": 12
+    },
+    {
+      "hex": "#067a4e",
+      "count": 5
+    },
+    {
+      "hex": "#0000ff",
+      "count": 4
+    },
+    {
+      "hex": "#7bd6ff",
+      "count": 4
+    },
+    {
+      "hex": "#8a5a00",
+      "count": 4
+    },
+    {
+      "hex": "#14161a",
+      "count": 3
+    },
+    {
+      "hex": "#8f8fff",
+      "count": 3
+    },
+    {
+      "hex": "#f2f4f7",
+      "count": 3
+    },
+    {
+      "hex": "#050608",
+      "count": 2
+    },
+    {
+      "hex": "#8e97a5",
+      "count": 2
+    },
+    {
+      "hex": "#b9bec6",
+      "count": 2
+    },
+    {
+      "hex": "#0000d6",
+      "count": 1
+    },
+    {
+      "hex": "#00a3c4",
+      "count": 1
+    },
+    {
+      "hex": "#0d1030",
+      "count": 1
+    },
+    {
+      "hex": "#1a2032",
+      "count": 1
+    },
+    {
+      "hex": "#1b2030",
+      "count": 1
+    },
+    {
+      "hex": "#2b2e34",
+      "count": 1
+    },
+    {
+      "hex": "#2b2f45",
+      "count": 1
+    },
+    {
+      "hex": "#4b5060",
+      "count": 1
+    },
+    {
+      "hex": "#4b5566",
+      "count": 1
+    },
+    {
+      "hex": "#52545a",
+      "count": 1
+    },
+    {
+      "hex": "#6b6d73",
+      "count": 1
+    },
+    {
+      "hex": "#7d8494",
+      "count": 1
+    },
+    {
+      "hex": "#8f96a6",
+      "count": 1
+    },
+    {
+      "hex": "#a7b2bf",
+      "count": 1
+    },
+    {
+      "hex": "#a9b0ba",
+      "count": 1
+    },
+    {
+      "hex": "#a9b0ff",
+      "count": 1
+    },
+    {
+      "hex": "#b3261e",
+      "count": 1
+    },
+    {
+      "hex": "#c2cbd5",
+      "count": 1
+    },
+    {
+      "hex": "#cfd7df",
+      "count": 1
+    },
+    {
+      "hex": "#dde3e9",
+      "count": 1
+    }
+  ],
+  "fonts": [
+    {
+      "value": "'Instrument Serif'",
+      "count": 2
+    },
+    {
+      "value": "'Geist Mono'",
+      "count": 1
+    },
+    {
+      "value": "'Geist'",
+      "count": 1
+    }
+  ],
+  "classNames": [
+    "!!s.error",
+    "1",
+    "1,",
+    "2",
+    "2,",
+    "===",
+    ">",
+    "?",
+    "app.badge",
+    "bad",
+    "bad:",
+    "bp-actions",
+    "bp-amount",
+    "bp-app",
+    "bp-app-foot",
+    "bp-app-main",
+    "bp-app-pane",
+    "bp-asset-btn",
+    "bp-asset-chips",
+    "bp-asset-item",
+    "bp-asset-search",
+    "bp-assets",
+    "bp-assets-list",
+    "bp-badge-preview",
+    "bp-badge-strip",
+    "bp-big",
+    "bp-btn",
+    "bp-btn--block",
+    "bp-btn--cobalt",
+    "bp-btn--sm",
+    "bp-btn__arrow",
+    "bp-ca",
+    "bp-ca-inline",
+    "bp-ca__tag",
+    "bp-canvas-wrap",
+    "bp-card",
+    "bp-card__dim",
+    "bp-chain",
+    "bp-chain-flow",
+    "bp-chain-hidden",
+    "bp-chain-node",
+    "bp-chain-node--accent",
+    "bp-chain-node--ghost",
+    "bp-chain-pulse",
+    "bp-chain-s",
+    "bp-chain-t",
+    "bp-chain-tag",
+    "bp-chain-tag--accent",
+    "bp-command",
+    "bp-command--app",
+    "bp-command--solid",
+    "bp-command__brand",
+    "bp-command__grow",
+    "bp-command__sep",
+    "bp-contracts",
+    "bp-copy",
+    "bp-count",
+    "bp-details",
+    "bp-details__text",
+    "bp-doc",
+    "bp-doc__tablewrap",
+    "bp-dot",
+    "bp-dot--good",
+    "bp-dot--plate",
+    "bp-empty",
+    "bp-facts",
+    "bp-faq",
+    "bp-field",
+    "bp-field__lab",
+    "bp-figure",
+    "bp-final",
+    "bp-final__space",
+    "bp-foot-note",
+    "bp-footer",
+    "bp-footer--slim",
+    "bp-footer__ca",
+    "bp-footer__col",
+    "bp-footer__id",
+    "bp-footer__note",
+    "bp-footer__word",
+    "bp-form",
+    "bp-gate-steps",
+    "bp-glyph",
+    "bp-good",
+    "bp-hero",
+    "bp-hero__acts",
+    "bp-hero__copy",
+    "bp-hero__eyebrow",
+    "bp-hero__lead",
+    "bp-hero__proof",
+    "bp-hero__visual",
+    "bp-hero__wordmark",
+    "bp-hold",
+    "bp-hold__label",
+    "bp-hold__ring",
+    "bp-inbox",
+    "bp-inbox__amt",
+    "bp-inbox__item",
+    "bp-inbox__sub",
+    "bp-input",
+    "bp-k",
+    "bp-label",
+    "bp-label--cobalt",
+    "bp-label--onplate",
+    "bp-landed",
+    "bp-landing",
+    "bp-lead",
+    "bp-ledger",
+    "bp-ledger__col",
+    "bp-ledger__col--open",
+    "bp-ledger__row",
+    "bp-linkline",
+    "bp-linkline__url",
+    "bp-main",
+    "bp-main__inner",
+    "bp-marginal",
+    "bp-max",
+    "bp-mini",
+    "bp-mini__link",
+    "bp-mini__row",
+    "bp-modal",
+    "bp-modal__body",
+    "bp-modal__close",
+    "bp-mono",
+    "bp-moves",
+    "bp-moves__no",
+    "bp-note",
+    "bp-num",
+    "bp-panel",
+    "bp-panel--flush",
+    "bp-panel--plate",
+    "bp-panel--quiet",
+    "bp-pill",
+    "bp-pill--ok",
+    "bp-pill--warn",
+    "bp-plate",
+    "bp-plate__tag",
+    "bp-pre",
+    "bp-prog",
+    "bp-progress",
+    "bp-progress__bar",
+    "bp-progress__head",
+    "bp-proof-grid",
+    "bp-qr",
+    "bp-rail",
+    "bp-rail__cta",
+    "bp-rail__link",
+    "bp-rail__mark",
+    "bp-rail__spacer",
+    "bp-range",
+    "bp-req",
+    "bp-resolve",
+    "bp-row",
+    "bp-runhead",
+    "bp-runhead__aside",
+    "bp-scan",
+    "bp-scan__bar",
+    "bp-seg",
+    "bp-sheet",
+    "bp-sheet__head",
+    "bp-sheet__row",
+    "bp-sheet__rows",
+    "bp-sheet__sender",
+    "bp-sheet__total",
+    "bp-sheet__tx",
+    "bp-side",
+    "bp-side__head",
+    "bp-side__more",
+    "bp-side__net",
+    "bp-snip",
+    "bp-snip__code",
+    "bp-snip__head",
+    "bp-stage",
+    "bp-stats",
+    "bp-stepper",
+    "bp-steps",
+    "bp-story",
+    "bp-story__grid",
+    "bp-story__rail",
+    "bp-story__steps",
+    "bp-summary",
+    "bp-table",
+    "bp-tip",
+    "bp-toast",
+    "bp-tok",
+    "bp-tok--brand",
+    "bp-tok--eth",
+    "bp-token-acts",
+    "bp-token-big",
+    "bp-token-card",
+    "bp-token-card__acts",
+    "bp-token-card__ca",
+    "bp-token-card__ca-row",
+    "bp-token-card__count",
+    "bp-token-card__state",
+    "bp-token-card__tick",
+    "bp-token-card__top",
+    "bp-token-card__verify",
+    "bp-token-dev",
+    "bp-token-grid",
+    "bp-token-head",
+    "bp-token-main",
+    "bp-token-mc",
+    "bp-token-side",
+    "bp-token-stats",
+    "bp-token-sub",
+    "bp-tools",
+    "bp-trade",
+    "bp-trade__ago",
+    "bp-trade__w",
+    "bp-trades",
+    "bp-v",
+    "bp-verify-ol",
+    "bp-verify__list",
+    "bp-viewport",
+    "bp-viewport__corners",
+    "bp-viewport__fallback",
+    "bp-viewport__hint",
+    "bp-vtext",
+    "bp-vtext--left",
+    "bp-vtext--right",
+    "bp-wallet",
+    "bp-wallets",
+    "bp-warn",
+    "classes[i]",
+    "done:",
+    "eth",
+    "live:",
+    "me:",
+    "nm",
+    "noteClass",
+    "on:",
+    "resolveClass",
+    "s.step",
+    "show",
+    "show:",
+    "showQr",
+    "showReqQr",
+    "statusLive",
+    "t.s",
+    "tip.side.startsWith(",
+    "u",
+    "warn",
+    "x.me",
+    "}"
+  ],
+  "designSignals": {
+    "frameworks": [],
+    "cssVars": [
+      "--bp-bad",
+      "--bp-cobalt",
+      "--bp-cobalt-ink",
+      "--bp-cobalt-line",
+      "--bp-cobalt-wash",
+      "--bp-cyan",
+      "--bp-dur",
+      "--bp-ease",
+      "--bp-faint",
+      "--bp-font-body",
+      "--bp-font-display",
+      "--bp-font-mono",
+      "--bp-gap",
+      "--bp-good",
+      "--bp-good-wash",
+      "--bp-ground",
+      "--bp-ground-deep",
+      "--bp-hairline",
+      "--bp-ink",
+      "--bp-ink-soft",
+      "--bp-legacy",
+      "--bp-line",
+      "--bp-line-strong",
+      "--bp-muted",
+      "--bp-on-plate",
+      "--bp-on-plate-soft",
+      "--bp-pad",
+      "--bp-plate",
+      "--bp-plate-2",
+      "--bp-r-lg",
+      "--bp-r-md",
+      "--bp-r-sm",
+      "--bp-rail",
+      "--bp-shadow",
+      "--bp-shadow-sm",
+      "--bp-surface",
+      "--bp-surface-2",
+      "--bp-track-display",
+      "--bp-track-label",
+      "--bp-w-display",
+      "--bp-warn",
+      "--bp-warn-wash",
+      "--cobalt"
+    ],
+    "colorVars": [
+      {
+        "name": "--bp-bad",
+        "value": "#b3261e"
+      },
+      {
+        "name": "--bp-cobalt",
+        "value": "#0000ff"
+      },
+      {
+        "name": "--bp-cobalt-ink",
+        "value": "#0000d6"
+      },
+      {
+        "name": "--bp-cobalt-line",
+        "value": "#0000ff"
+      },
+      {
+        "name": "--bp-cobalt-wash",
+        "value": "#0000ff"
+      },
+      {
+        "name": "--bp-cyan",
+        "value": "#00a3c4"
+      },
+      {
+        "name": "--bp-faint",
+        "value": "#6b6d73"
+      },
+      {
+        "name": "--bp-good",
+        "value": "#067a4e"
+      },
+      {
+        "name": "--bp-good-wash",
+        "value": "#067a4e"
+      },
+      {
+        "name": "--bp-ground",
+        "value": "#dde3e9"
+      },
+      {
+        "name": "--bp-ground-deep",
+        "value": "#cfd7df"
+      },
+      {
+        "name": "--bp-hairline",
+        "value": "#0a0b0d"
+      },
+      {
+        "name": "--bp-ink",
+        "value": "#0a0b0d"
+      },
+      {
+        "name": "--bp-ink-soft",
+        "value": "#2b2e34"
+      },
+      {
+        "name": "--bp-line",
+        "value": "#c2cbd5"
+      },
+      {
+        "name": "--bp-line-strong",
+        "value": "#a7b2bf"
+      },
+      {
+        "name": "--bp-muted",
+        "value": "#52545a"
+      },
+      {
+        "name": "--bp-on-plate",
+        "value": "#f2f4f7"
+      },
+      {
+        "name": "--bp-on-plate-soft",
+        "value": "#b9bec6"
+      },
+      {
+        "name": "--bp-plate",
+        "value": "#0a0b0d"
+      },
+      {
+        "name": "--bp-plate-2",
+        "value": "#14161a"
+      },
+      {
+        "name": "--bp-surface",
+        "value": "#ffffff"
+      },
+      {
+        "name": "--bp-surface-2",
+        "value": "#f2f5f8"
+      },
+      {
+        "name": "--bp-warn",
+        "value": "#8a5a00"
+      },
+      {
+        "name": "--bp-warn-wash",
+        "value": "#8a5a00"
+      }
+    ],
+    "mediaQueries": [
+      "@media (max-width: 1040px)",
+      "@media (max-width: 1180px)",
+      "@media (max-width: 720px)",
+      "@media (prefers-reduced-motion: no-preference)",
+      "@media (prefers-reduced-motion: reduce)"
+    ],
+    "darkMode": false
+  },
+  "structure": {
+    "tagCounts": {
+      "a": 86,
+      "accountgate": 2,
+      "animate": 2,
+      "article": 16,
+      "aside": 1,
+      "asseticon": 4,
+      "assetmodal": 1,
+      "b": 72,
+      "basemodal": 3,
+      "br": 5,
+      "brand": 4,
+      "button": 30,
+      "canvas": 2,
+      "circle": 4,
+      "code": 8,
+      "component": 1,
+      "defs": 1,
+      "details": 7,
+      "dialog": 1,
+      "div": 209,
+      "em": 15,
+      "form": 1,
+      "g": 3,
+      "githubicon": 3,
+      "h1": 8,
+      "h2": 20,
+      "h3": 13,
+      "i": 14,
+      "img": 12,
+      "input": 6,
+      "label": 3,
+      "li": 18,
+      "lineargradient": 1,
+      "main": 3,
+      "nav": 6,
+      "ol": 3,
+      "p": 59,
+      "path": 30,
+      "pre": 2,
+      "rect": 7,
+      "routerlink": 4,
+      "routerview": 1,
+      "section": 9,
+      "sitefooter": 2,
+      "slot": 1,
+      "small": 11,
+      "span": 243,
+      "stop": 3,
+      "summary": 7,
+      "svg": 19,
+      "table": 3,
+      "tbody": 3,
+      "td": 40,
+      "telegramicon": 3,
+      "template": 2,
+      "text": 10,
+      "th": 3,
+      "thead": 1,
+      "toasthost": 1,
+      "tokensection": 1,
+      "tr": 17,
+      "ul": 3,
+      "walletmodal": 1,
+      "withdrawmodal": 1,
+      "xicon": 3
+    },
+    "depthHistogram": {
+      "0": 28,
+      "1": 83,
+      "2": 132,
+      "3": 135,
+      "4": 122,
+      "5": 116,
+      "6": 169,
+      "7": 170,
+      "8": 70,
+      "9": 50,
+      "10": 3
+    },
+    "maxDepth": 10,
+    "topLevelTags": [
+      "routerview",
+      "toasthost",
+      "a",
+      "svg",
+      "div",
+      "div",
+      "svg",
+      "div",
+      "section",
+      "svg",
+      "div",
+      "div",
+      "span",
+      "span",
+      "span",
+      "basemodal",
+      "dialog",
+      "accountgate",
+      "div",
+      "accountgate",
+      "template",
+      "div",
+      "div",
+      "basemodal",
+      "basemodal",
+      "div",
+      "div",
+      "div"
+    ],
+    "skeletonSample": [
+      "routerview",
+      "toasthost",
+      "a",
+      "  img",
+      "  b",
+      "svg",
+      "  path",
+      "div",
+      "  p",
+      "  div",
+      "div",
+      "  div",
+      "    brand",
+      "    p",
+      "  nav",
+      "    span",
+      "    a",
+      "    a",
+      "    a",
+      "  nav",
+      "    span",
+      "    a",
+      "    a",
+      "    a",
+      "    a",
+      "  nav",
+      "    span",
+      "    a",
+      "    a",
+      "    a",
+      "    a",
+      "    a",
+      "  div",
+      "    span",
+      "    code",
+      "  p",
+      "  div",
+      "svg",
+      "  path",
+      "div",
+      "section",
+      "  div",
+      "    span",
+      "  h2",
+      "    em",
+      "  p",
+      "  div",
+      "    div",
+      "      article",
+      "        div",
+      "          div",
+      "            span",
+      "              span",
+      "              span",
+      "            div",
+      "              span",
+      "              small",
+      "            div",
+      "              span",
+      "              span",
+      "          div",
+      "            button",
+      "        div",
+      "          canvas",
+      "          div",
+      "            b",
+      "            span",
+      "            span",
+      "        div",
+      "          div",
+      "            span",
+      "            b",
+      "          div",
+      "            span",
+      "            b",
+      "          div",
+      "            span",
+      "            b",
+      "              span",
+      "              i",
+      "              span",
+      "        div",
+      "          div",
+      "            span",
+      "            span",
+      "              b",
+      "              span",
+      "          div",
+      "            i",
+      "          p",
+      "    aside",
+      "      article",
+      "        span",
+      "          i",
+      "        div",
+      "          span",
+      "          span",
+      "            a",
+      "            button",
+      "              svg",
+      "                rect",
+      "                path",
+      "        div",
+      "          span",
+      "          b",
+      "        div",
+      "          span",
+      "          b",
+      "        div",
+      "          span",
+      "          b",
+      "        div",
+      "          span",
+      "          span",
+      "            b",
+      "              span",
+      "            small",
+      "              a",
+      "              a",
+      "              a"
+    ]
+  },
+  "contentContract": {
+    "schemaVersion": 1,
+    "meta": {
+      "projectName": "receiva-website",
+      "title": "receiva-website",
+      "lang": "en"
+    },
+    "routes": [
+      "/",
+      "/app",
+      "/app/",
+      "/inbox",
+      "/pay/:recipient",
+      "/receive",
+      "/send",
+      "/transparency"
+    ],
+    "visibleText": [
+      {
+        "value": ". Look for an owner or a fee. There is none.",
+        "count": 1
+      },
+      {
+        "value": "· price",
+        "count": 1
+      },
+      {
+        "value": "@noble/curves",
+        "count": 1
+      },
+      {
+        "value": "@receiva",
+        "count": 1
+      },
+      {
+        "value": "● Registered",
+        "count": 1
+      },
+      {
+        "value": "$RECEIVA",
+        "count": 2
+      },
+      {
+        "value": "$RECEIVA contract",
+        "count": 1
+      },
+      {
+        "value": "$RECEIVA is the community token for the project. The app is free and does not require it. Creator fees fund servers and, next, a relayer so withdrawals need no ETH at all.",
+        "count": 1
+      },
+      {
+        "value": "0",
+        "count": 2
+      },
+      {
+        "value": "0 Receiva ↗",
+        "count": 1
+      },
+      {
+        "value": "0.0002 ETH sent to a one-time address",
+        "count": 1
+      },
+      {
+        "value": "0.0002 ETH to one-time address",
+        "count": 1
+      },
+      {
+        "value": "0.05 ETH",
+        "count": 1
+      },
+      {
+        "value": "0%",
+        "count": 1
+      },
+      {
+        "value": "0% fee",
+        "count": 1
+      },
+      {
+        "value": "01",
+        "count": 2
+      },
+      {
+        "value": "01 · Exposed",
+        "count": 1
+      },
+      {
+        "value": "02",
+        "count": 2
+      },
+      {
+        "value": "02 · Hooded",
+        "count": 1
+      },
+      {
+        "value": "03",
+        "count": 2
+      },
+      {
+        "value": "03 · Landed",
+        "count": 1
+      },
+      {
+        "value": "04",
+        "count": 1
+      },
+      {
+        "value": "04 · Only you",
+        "count": 1
+      },
+      {
+        "value": "0x66dc…aaa1",
+        "count": 1
+      },
+      {
+        "value": "0x7711…e22",
+        "count": 1
+      },
+      {
+        "value": "0x9A3f…e21C",
+        "count": 1
+      },
+      {
+        "value": "1",
+        "count": 2
+      },
+      {
+        "value": "1.5 NVDA",
+        "count": 1
+      },
+      {
+        "value": "2",
+        "count": 2
+      },
+      {
+        "value": "24h trades",
+        "count": 1
+      },
+      {
+        "value": "24h volume",
+        "count": 1
+      },
+      {
+        "value": "3",
+        "count": 1
+      },
+      {
+        "value": "A hood hides a face,",
+        "count": 1
+      },
+      {
+        "value": "AAPL",
+        "count": 1
+      },
+      {
+        "value": "address ↗",
+        "count": 1
+      },
+      {
+        "value": "Amount",
+        "count": 2
+      },
+      {
+        "value": "Amount & asset",
+        "count": 1
+      },
+      {
+        "value": "Amount and asset",
+        "count": 2
+      },
+      {
+        "value": "And what it doesn't.",
+        "count": 1
+      },
+      {
+        "value": "announcements on Robinhood Chain ·",
+        "count": 1
+      },
+      {
+        "value": "Announcer",
+        "count": 1
+      },
+      {
+        "value": "answered plainly.",
+        "count": 1
+      },
+      {
+        "value": "any ERC-20",
+        "count": 1
+      },
+      {
+        "value": "Any regular EVM wallet: MetaMask, Rabby, Phantom (enable Robinhood Chain under Active Networks) and others. Smart-contract wallets may sign differently each time, so they are not recommended.",
+        "count": 1
+      },
+      {
+        "value": "Anyone who clicks it pays a one-time address. Your wallet never appears in the payment on-chain.",
+        "count": 1
+      },
+      {
+        "value": "Apple",
+        "count": 1
+      },
+      {
+        "value": "Approve",
+        "count": 1
+      },
+      {
+        "value": "Ask for an exact amount.",
+        "count": 2
+      },
+      {
+        "value": "At 4.2 ETH the curve completes and liquidity moves to Uniswap v4, where it is locked.",
+        "count": 1
+      },
+      {
+        "value": "Audit",
+        "count": 1
+      },
+      {
+        "value": "Balance",
+        "count": 1
+      },
+      {
+        "value": "Before launch, the router was deployed and tested with real funds on Robinhood Chain. Every step is public.",
+        "count": 1
+      },
+      {
+        "value": "Blockscout, solc 0.8.26, optimizer 1,000,000 runs ·",
+        "count": 1
+      },
+      {
+        "value": "Bonding curve",
+        "count": 1
+      },
+      {
+        "value": "burn 1 ↗",
+        "count": 1
+      },
+      {
+        "value": "burn 2 ↗",
+        "count": 1
+      },
+      {
+        "value": "burned",
+        "count": 1
+      },
+      {
+        "value": "buy ↗",
+        "count": 1
+      },
+      {
+        "value": "buy and sell, fixed at launch",
+        "count": 1
+      },
+      {
+        "value": "Buy on Pons",
+        "count": 2
+      },
+      {
+        "value": "Buys / sells",
+        "count": 1
+      },
+      {
+        "value": "CA",
+        "count": 1
+      },
+      {
+        "value": "can find them.",
+        "count": 1
+      },
+      {
+        "value": "Can Receiva take or freeze my money?",
+        "count": 1
+      },
+      {
+        "value": "Chain 4663 · Non-custodial",
+        "count": 1
+      },
+      {
+        "value": "Chart",
+        "count": 1
+      },
+      {
+        "value": "Check it on Blockscout ↗",
+        "count": 1
+      },
+      {
+        "value": "Check its balance. It is zero, and it stays zero after every payment.",
+        "count": 1
+      },
+      {
+        "value": "Choose an asset",
+        "count": 1
+      },
+      {
+        "value": "Connect a wallet",
+        "count": 1
+      },
+      {
+        "value": "Connect the wallet you want to be paid in. Receiva never asks for a transaction to look around.",
+        "count": 1
+      },
+      {
+        "value": "Connect wallet",
+        "count": 1
+      },
+      {
+        "value": "Contract",
+        "count": 2
+      },
+      {
+        "value": "Contract address",
+        "count": 1
+      },
+      {
+        "value": "Contracts",
+        "count": 1
+      },
+      {
+        "value": "Copy",
+        "count": 3
+      },
+      {
+        "value": "counts every stealth payment announced on Robinhood Chain by any app, because the Announcer is a shared standard contract. Receiva is new; most of the second number is not Receiva.",
+        "count": 1
+      },
+      {
+        "value": "counts only payments sent through the Receiva Router.",
+        "count": 1
+      },
+      {
+        "value": "Create a request",
+        "count": 1
+      },
+      {
+        "value": "Create your link",
+        "count": 2
+      },
+      {
+        "value": "Create your link and send yourself 0.0001 ETH from another wallet. Watch it land at an address that has never touched yours.",
+        "count": 1
+      },
+      {
+        "value": "Creator tax",
+        "count": 1
+      },
+      {
+        "value": "Custom token",
+        "count": 1
+      },
+      {
+        "value": "Dark",
+        "count": 1
+      },
+      {
+        "value": "Delivered under the hood.",
+        "count": 1
+      },
+      {
+        "value": "Derived and used only inside your browser.",
+        "count": 1
+      },
+      {
+        "value": "Derived from a wallet signature inside the browser. Never sent to any server.",
+        "count": 1
+      },
+      {
+        "value": "Dev buy",
+        "count": 1
+      },
+      {
+        "value": "Dev wallet holds",
+        "count": 1
+      },
+      {
+        "value": "DexScreener",
+        "count": 2
+      },
+      {
+        "value": "Different keys on record",
+        "count": 1
+      },
+      {
+        "value": "Don't trust us.",
+        "count": 1
+      },
+      {
+        "value": "Each payment creates a one-time address, derived on the spot. Ten payments, ten addresses, and no thread between them.",
+        "count": 1
+      },
+      {
+        "value": "Each payment uses a new one-time address.",
+        "count": 1
+      },
+      {
+        "value": "ERC-5564",
+        "count": 1
+      },
+      {
+        "value": "ERC-5564 / 4663",
+        "count": 1
+      },
+      {
+        "value": "ERC-5564 Announcer",
+        "count": 2
+      },
+      {
+        "value": "ERC-5564 payments · all apps",
+        "count": 2
+      },
+      {
+        "value": "ERC-5564 payments on the chain, every app",
+        "count": 1
+      },
+      {
+        "value": "ERC-6538",
+        "count": 1
+      },
+      {
+        "value": "ERC-6538 Registry",
+        "count": 2
+      },
+      {
+        "value": "ETH",
+        "count": 6
+      },
+      {
+        "value": "ETH, Robinhood stock tokens, or any ERC-20 by address.",
+        "count": 1
+      },
+      {
+        "value": "Ether",
+        "count": 2
+      },
+      {
+        "value": "Every payment gets its own address.",
+        "count": 1
+      },
+      {
+        "value": "Every payment lands",
+        "count": 1
+      },
+      {
+        "value": "Every payment to this link lands in a brand-new address that only you can open.",
+        "count": 1
+      },
+      {
+        "value": "Every trade below is read straight from the Pons bonding curve on Robinhood Chain. No third-party feed, no rounding of the story.",
+        "count": 1
+      },
+      {
+        "value": "everyone",
+        "count": 1
+      },
+      {
+        "value": "Everything below is live on Robinhood Chain. Every claim links to the block explorer, so you can check it without asking us.",
+        "count": 1
+      },
+      {
+        "value": "FAQ",
+        "count": 4
+      },
+      {
+        "value": "First private payment",
+        "count": 1
+      },
+      {
+        "value": "First withdrawal",
+        "count": 1
+      },
+      {
+        "value": "Found with the viewing key, moved with the one-time key ·",
+        "count": 1
+      },
+      {
+        "value": "Found with the viewing key, withdrawn",
+        "count": 1
+      },
+      {
+        "value": "Four checks.",
+        "count": 1
+      },
+      {
+        "value": "Free · 0 gas",
+        "count": 1
+      },
+      {
+        "value": "FRESH",
+        "count": 1
+      },
+      {
+        "value": "Functions",
+        "count": 1
+      },
+      {
+        "value": "Funds go to a one-time address derived from the receiver's public keys and a random value only the sender knows.",
+        "count": 1
+      },
+      {
+        "value": "Funds held by Receiva",
+        "count": 3
+      },
+      {
+        "value": "Funds land in a one-time address, not your wallet.",
+        "count": 1
+      },
+      {
+        "value": "Get your button",
+        "count": 1
+      },
+      {
+        "value": "GitHub",
+        "count": 3
+      },
+      {
+        "value": "github.com/receivapro/receiva",
+        "count": 1
+      },
+      {
+        "value": "Hidden",
+        "count": 5
+      },
+      {
+        "value": "Hidden amounts:",
+        "count": 1
+      },
+      {
+        "value": "hidden under the hood",
+        "count": 1
+      },
+      {
+        "value": "Holds 0 ETH",
+        "count": 1
+      },
+      {
+        "value": "Honest by design",
+        "count": 1
+      },
+      {
+        "value": "How it works",
+        "count": 4
+      },
+      {
+        "value": "Inbox",
+        "count": 4
+      },
+      {
+        "value": "Independent audit:",
+        "count": 1
+      },
+      {
+        "value": "Information",
+        "count": 1
+      },
+      {
+        "value": "Install MetaMask, Rabby or Phantom, then reload.",
+        "count": 1
+      },
+      {
+        "value": "Invoice #12 · logo design",
+        "count": 1
+      },
+      {
+        "value": "Is Receiva a mixer?",
+        "count": 1
+      },
+      {
+        "value": "It is short.",
+        "count": 1
+      },
+      {
+        "value": "Keys leave browser",
+        "count": 1
+      },
+      {
+        "value": "landed in a one-time address. Only the recipient can find it.",
+        "count": 1
+      },
+      {
+        "value": "Latest block",
+        "count": 1
+      },
+      {
+        "value": "Latest trades",
+        "count": 1
+      },
+      {
+        "value": "Launchpad",
+        "count": 1
+      },
+      {
+        "value": "library.",
+        "count": 1
+      },
+      {
+        "value": "Light",
+        "count": 1
+      },
+      {
+        "value": "Link between two payments",
+        "count": 1
+      },
+      {
+        "value": "Links between payments",
+        "count": 1
+      },
+      {
+        "value": "Live balance",
+        "count": 1
+      },
+      {
+        "value": "Live on Robinhood Chain",
+        "count": 1
+      },
+      {
+        "value": "Mainnet proof",
+        "count": 1
+      },
+      {
+        "value": "market cap",
+        "count": 1
+      },
+      {
+        "value": "Max",
+        "count": 1
+      },
+      {
+        "value": "more stock tokens",
+        "count": 1
+      },
+      {
+        "value": "Move to turn the vault",
+        "count": 1
+      },
+      {
+        "value": "Names your wallet",
+        "count": 1
+      },
+      {
+        "value": "Network",
+        "count": 1
+      },
+      {
+        "value": "Network cost of the whole round trip: under one cent. Before mainnet, the router and the full app flow passed tests on a fork of Robinhood Chain with real NVDA stock tokens.",
+        "count": 1
+      },
+      {
+        "value": "Never",
+        "count": 3
+      },
+      {
+        "value": "Never shared",
+        "count": 1
+      },
+      {
+        "value": "New · Pay me privately button",
+        "count": 1
+      },
+      {
+        "value": "New · Payment requests",
+        "count": 1
+      },
+      {
+        "value": "new one-time address",
+        "count": 1
+      },
+      {
+        "value": "No match.",
+        "count": 1
+      },
+      {
+        "value": "No new wallet.",
+        "count": 1
+      },
+      {
+        "value": "no on-chain link",
+        "count": 1
+      },
+      {
+        "value": "No owner · no fee · holds nothing",
+        "count": 1
+      },
+      {
+        "value": "No trades indexed yet.",
+        "count": 1
+      },
+      {
+        "value": "No trust required.",
+        "count": 1
+      },
+      {
+        "value": "No wallet found in this browser.",
+        "count": 1
+      },
+      {
+        "value": "No. The router has no owner and no admin functions, and it never holds a balance. Only your spending key can move funds out of your one-time addresses. Note that stock token issuers can still pause their own tokens.",
+        "count": 1
+      },
+      {
+        "value": "No. There is no shared pool and nothing is mixed. Each payment goes straight from the sender to a one-time address that belongs to the receiver. Receiva never holds funds.",
+        "count": 1
+      },
+      {
+        "value": "Non-custodial · ERC-5564 / ERC-6538 · Keys never leave your browser",
+        "count": 1
+      },
+      {
+        "value": "None",
+        "count": 2
+      },
+      {
+        "value": "not a crowd.",
+        "count": 1
+      },
+      {
+        "value": "not a wallet.",
+        "count": 1
+      },
+      {
+        "value": "not an address.",
+        "count": 1
+      },
+      {
+        "value": "Not done yet",
+        "count": 1
+      },
+      {
+        "value": "Not on-chain",
+        "count": 1
+      },
+      {
+        "value": "Not our invention.",
+        "count": 1
+      },
+      {
+        "value": "not planned without zero-knowledge proofs and an audit. We will not claim it.",
+        "count": 1
+      },
+      {
+        "value": "Not registered",
+        "count": 1
+      },
+      {
+        "value": "Not yet",
+        "count": 1
+      },
+      {
+        "value": "not yet. The router is short and verified; the cryptography follows ERC-5564 scheme 1 with the audited",
+        "count": 1
+      },
+      {
+        "value": "Note",
+        "count": 1
+      },
+      {
+        "value": "Note written on-chain",
+        "count": 1
+      },
+      {
+        "value": "NVDA",
+        "count": 2
+      },
+      {
+        "value": "NVIDIA",
+        "count": 1
+      },
+      {
+        "value": "Official links",
+        "count": 1
+      },
+      {
+        "value": "On mainnet.",
+        "count": 1
+      },
+      {
+        "value": "On Robinhood Chain an address is an open brokerage statement. Pay someone once and they can read every share you hold, every trade you made, every wallet you touch.",
+        "count": 1
+      },
+      {
+        "value": "On-chain facts",
+        "count": 1
+      },
+      {
+        "value": "On-chain visibility",
+        "count": 1
+      },
+      {
+        "value": "One free signature turns your wallet into two private keys: one to find payments, one to move them.",
+        "count": 1
+      },
+      {
+        "value": "One line of HTML for your website, Markdown for GitHub, a short line for your bio. Anyone who clicks it pays a one-time address, not your wallet.",
+        "count": 1
+      },
+      {
+        "value": "One signature. One link. Every payment, under the hood.",
+        "count": 1
+      },
+      {
+        "value": "One-time address",
+        "count": 2
+      },
+      {
+        "value": "Only",
+        "count": 1
+      },
+      {
+        "value": "Only you can see this list.",
+        "count": 1
+      },
+      {
+        "value": "Open app",
+        "count": 2
+      },
+      {
+        "value": "Open Inbox →",
+        "count": 1
+      },
+      {
+        "value": "open on GitHub",
+        "count": 1
+      },
+      {
+        "value": "Open source",
+        "count": 2
+      },
+      {
+        "value": "Open standards",
+        "count": 1
+      },
+      {
+        "value": "Open the Router on Blockscout and read the Code tab, or the full source on",
+        "count": 1
+      },
+      {
+        "value": "Open your Inbox and withdraw it. Your keys came from one signature and never left the tab.",
+        "count": 1
+      },
+      {
+        "value": "optional",
+        "count": 1
+      },
+      {
+        "value": "Outside Receiva's control",
+        "count": 1
+      },
+      {
+        "value": "Owner / admin",
+        "count": 1
+      },
+      {
+        "value": "Owner: unknown · first seen just now",
+        "count": 1
+      },
+      {
+        "value": "Paid → 0x7f3e…b91a",
+        "count": 1
+      },
+      {
+        "value": "Paste a Receiva link or the recipient's wallet address. A fresh one-time address is made for this payment only.",
+        "count": 1
+      },
+      {
+        "value": "Pay a link,",
+        "count": 1
+      },
+      {
+        "value": "Pay me privately button",
+        "count": 1
+      },
+      {
+        "value": "Payment request",
+        "count": 2
+      },
+      {
+        "value": "Payments through the Receiva Router",
+        "count": 1
+      },
+      {
+        "value": "Payments via Receiva Router",
+        "count": 2
+      },
+      {
+        "value": "Phantom users: enable Robinhood Chain in Settings → Active Networks.",
+        "count": 1
+      },
+      {
+        "value": "Pons",
+        "count": 1
+      },
+      {
+        "value": "Pons V2",
+        "count": 1
+      },
+      {
+        "value": "Portfolio",
+        "count": 1
+      },
+      {
+        "value": "Post it in your bio, send it to a client, print it as a QR. Anyone with ETH or a stock token on Robinhood Chain can pay it.",
+        "count": 1
+      },
+      {
+        "value": "Pre-mainnet tests",
+        "count": 1
+      },
+      {
+        "value": "Privacy tools fail when they overpromise. Here is exactly what Receiva changes on-chain and what it does not.",
+        "count": 1
+      },
+      {
+        "value": "PRIVATE",
+        "count": 1
+      },
+      {
+        "value": "Private receive links · Robinhood Chain",
+        "count": 1
+      },
+      {
+        "value": "Private receive links on Robinhood Chain.",
+        "count": 1
+      },
+      {
+        "value": "privately. Incoming payments stay unlinkable on-chain, but the short link itself shows your wallet address to whoever you give it to. Share the long link if that matters.",
+        "count": 1
+      },
+      {
+        "value": "Product",
+        "count": 1
+      },
+      {
+        "value": "Proof",
+        "count": 1
+      },
+      {
+        "value": "Proof, not promises",
+        "count": 1
+      },
+      {
+        "value": "Public",
+        "count": 6
+      },
+      {
+        "value": "PUBLIC",
+        "count": 1
+      },
+      {
+        "value": "Publishes your public receive keys so anyone can pay",
+        "count": 1
+      },
+      {
+        "value": "Put a hood on",
+        "count": 1
+      },
+      {
+        "value": "Put a hood on it.",
+        "count": 1
+      },
+      {
+        "value": "Put a hood on your wallet",
+        "count": 1
+      },
+      {
+        "value": "Put it on your site or profile.",
+        "count": 2
+      },
+      {
+        "value": "QR code",
+        "count": 2
+      },
+      {
+        "value": "Questions,",
+        "count": 1
+      },
+      {
+        "value": "Read exactly what stays public →",
+        "count": 1
+      },
+      {
+        "value": "Read from the chain every few seconds. Payments go straight from the sender to a one-time address. Nothing waits in a pool.",
+        "count": 1
+      },
+      {
+        "value": "read the code",
+        "count": 1
+      },
+      {
+        "value": "Read the whole contract.",
+        "count": 1
+      },
+      {
+        "value": "Receiva",
+        "count": 4
+      },
+      {
+        "value": "Receiva · Unlock your private receive keys Signing is free. It sends nothing and moves nothing. This signature stays in your browser. Network: Robinhood Chain (4663) Key version: 1",
+        "count": 1
+      },
+      {
+        "value": "Receiva fee",
+        "count": 3
+      },
+      {
+        "value": "Receiva gives you a private receive link. Every payment lands in a fresh address that only you can open. No pool, no custody, no mixer.",
+        "count": 1
+      },
+      {
+        "value": "Receiva is a thin layer over two Ethereum standards whose contracts were already live on Robinhood Chain before Receiva existed.",
+        "count": 1
+      },
+      {
+        "value": "Receiva is open-source software, not a bank or broker. Amounts and senders remain public on-chain. Not financial advice. Unaudited; use at your own risk.",
+        "count": 1
+      },
+      {
+        "value": "Receiva is open-source software, not a bank or broker. Unaudited; use at your own risk.",
+        "count": 1
+      },
+      {
+        "value": "Receiva Router",
+        "count": 2
+      },
+      {
+        "value": "Receiva uses stealth addresses (ERC-5564). It breaks the on-chain link between a payment and the person who receives it. It does not make transactions invisible. Here is the full picture.",
+        "count": 1
+      },
+      {
+        "value": "Receiva works with any EVM wallet on Robinhood Chain.",
+        "count": 1
+      },
+      {
+        "value": "receiva.xyz/pay/0x9A3f…e21C",
+        "count": 1
+      },
+      {
+        "value": "Receive",
+        "count": 3
+      },
+      {
+        "value": "Received 1,200 USDG",
+        "count": 1
+      },
+      {
+        "value": "Receiver wallet",
+        "count": 1
+      },
+      {
+        "value": "Receiver's main wallet",
+        "count": 1
+      },
+      {
+        "value": "Receiver's private keys",
+        "count": 1
+      },
+      {
+        "value": "Recent",
+        "count": 1
+      },
+      {
+        "value": "Recipient",
+        "count": 1
+      },
+      {
+        "value": "Recipient wallet on-chain",
+        "count": 1
+      },
+      {
+        "value": "Registered receive keys",
+        "count": 1
+      },
+      {
+        "value": "Registering a short link publishes your public keys next to your address. Incoming payments are still unlinkable.",
+        "count": 1
+      },
+      {
+        "value": "Registry",
+        "count": 1
+      },
+      {
+        "value": "Relayer:",
+        "count": 1
+      },
+      {
+        "value": "Requested",
+        "count": 1
+      },
+      {
+        "value": "Robinhood Chain",
+        "count": 2
+      },
+      {
+        "value": "Robinhood stock tokens are issued with controls: the issuer can pause transfers or block addresses. Receiva cannot override this. Timing and amount patterns can also hint at who received a payment; vary them if that matters to you.",
+        "count": 1
+      },
+      {
+        "value": "Router",
+        "count": 2
+      },
+      {
+        "value": "Router deployed",
+        "count": 2
+      },
+      {
+        "value": "Router source",
+        "count": 1
+      },
+      {
+        "value": "Router unit tests and the full app flow (register, send ETH, send NVDA, scan, withdraw) passed on a fork of Robinhood Chain using the live Announcer and real NVDA stock tokens.",
+        "count": 1
+      },
+      {
+        "value": "Same receipts.",
+        "count": 1
+      },
+      {
+        "value": "sees.",
+        "count": 1
+      },
+      {
+        "value": "Send",
+        "count": 2
+      },
+      {
+        "value": "Send another",
+        "count": 1
+      },
+      {
+        "value": "Send ETH, any ERC-20, and every Robinhood stock token",
+        "count": 1
+      },
+      {
+        "value": "Send privately",
+        "count": 2
+      },
+      {
+        "value": "Send to",
+        "count": 1
+      },
+      {
+        "value": "Sender wallet",
+        "count": 2
+      },
+      {
+        "value": "Sender's wallet",
+        "count": 1
+      },
+      {
+        "value": "sendEth · sendToken",
+        "count": 1
+      },
+      {
+        "value": "Sends ETH or a token to the one-time address and calls the Announcer in the same transaction. No owner, no fee, no admin functions, never holds a balance. Source verified on Blockscout.",
+        "count": 1
+      },
+      {
+        "value": "Sent privately",
+        "count": 1
+      },
+      {
+        "value": "Sent, found, withdrawn.",
+        "count": 1
+      },
+      {
+        "value": "Set 0.05 ETH, 2 NVDA or any amount, add a note like \"Invoice #12\", share the link or its QR. The payer opens it and everything is filled in.",
+        "count": 1
+      },
+      {
+        "value": "Set the amount, the asset and a note. The payer opens the link and everything is filled in.",
+        "count": 1
+      },
+      {
+        "value": "Share",
+        "count": 2
+      },
+      {
+        "value": "Share a link,",
+        "count": 1
+      },
+      {
+        "value": "Share this.",
+        "count": 1
+      },
+      {
+        "value": "Share your link",
+        "count": 1
+      },
+      {
+        "value": "Short link (0x…)",
+        "count": 1
+      },
+      {
+        "value": "Short link (ERC-6538 registry)",
+        "count": 1
+      },
+      {
+        "value": "Sign again on any device and the same keys come back.",
+        "count": 1
+      },
+      {
+        "value": "Sign one fixed message with the wallet you already use. Free, no transaction. Your browser derives a viewing key and a spending key.",
+        "count": 1
+      },
+      {
+        "value": "Signature",
+        "count": 1
+      },
+      {
+        "value": "Signed in this browser with the one-time key. Network fee is paid from the ETH inside this address.",
+        "count": 1
+      },
+      {
+        "value": "Sold 12 TSLA",
+        "count": 1
+      },
+      {
+        "value": "somewhere new.",
+        "count": 1
+      },
+      {
+        "value": "Source verified",
+        "count": 3
+      },
+      {
+        "value": "Source verified and",
+        "count": 1
+      },
+      {
+        "value": "SpaceX",
+        "count": 1
+      },
+      {
+        "value": "SPCX",
+        "count": 1
+      },
+      {
+        "value": "Standard contract, already live",
+        "count": 1
+      },
+      {
+        "value": "Standard contract, deployed with the canonical CREATE2 address. Logs each payment.",
+        "count": 1
+      },
+      {
+        "value": "Standard contract. Maps a wallet to its public receive keys.",
+        "count": 2
+      },
+      {
+        "value": "Status",
+        "count": 1
+      },
+      {
+        "value": "Stay hooded.",
+        "count": 1
+      },
+      {
+        "value": "Stealth meta-address",
+        "count": 1
+      },
+      {
+        "value": "Still public",
+        "count": 1
+      },
+      {
+        "value": "Supply",
+        "count": 1
+      },
+      {
+        "value": "Telegram",
+        "count": 1
+      },
+      {
+        "value": "Tesla",
+        "count": 1
+      },
+      {
+        "value": "Tested on mainnet",
+        "count": 1
+      },
+      {
+        "value": "Tested with real money",
+        "count": 1
+      },
+      {
+        "value": "That's the point.",
+        "count": 1
+      },
+      {
+        "value": "The 0x short link names your wallet to whoever you share it with. The long link does not.",
+        "count": 1
+      },
+      {
+        "value": "The full code behind receiva.xyz is public: the router, the cryptography, the app and the indexer. The router compiled from that repository is byte-for-byte identical to the one deployed on Robinhood Chain; the README shows how to check it in one command.",
+        "count": 1
+      },
+      {
+        "value": "The message you sign",
+        "count": 1
+      },
+      {
+        "value": "The note comes from the link you opened. It is not written on-chain.",
+        "count": 1
+      },
+      {
+        "value": "The note lives only in the link. It is never written on-chain. Amounts are public once paid, like any transfer.",
+        "count": 1
+      },
+      {
+        "value": "The payer is not hidden.",
+        "count": 1
+      },
+      {
+        "value": "The payer signs a normal transaction from their own wallet.",
+        "count": 1
+      },
+      {
+        "value": "The Receiva Router is under 80 lines. No owner, no fee, no admin switch, no upgrade path. It forwards a payment and logs one announcement. That is all it can do.",
+        "count": 1
+      },
+      {
+        "value": "The sender. Each token payment carries a tiny amount of ETH (0.00002) to the one-time address, so you can withdraw without funding it first.",
+        "count": 1
+      },
+      {
+        "value": "The sender's wallet",
+        "count": 1
+      },
+      {
+        "value": "The short link is your wallet address. Whoever you share it with knows the payment is for that wallet. The chain still does not link the payment to it. Share the long link to avoid this.",
+        "count": 1
+      },
+      {
+        "value": "The site shows two counters, and they measure different things.",
+        "count": 1
+      },
+      {
+        "value": "The token.",
+        "count": 1
+      },
+      {
+        "value": "This is what",
+        "count": 1
+      },
+      {
+        "value": "This long link works right now. Register once to shorten it to your wallet address.",
+        "count": 1
+      },
+      {
+        "value": "This wallet registered different keys earlier, so senders using your address would pay keys you cannot open here. Re-register to point your address at the keys you just unlocked.",
+        "count": 1
+      },
+      {
+        "value": "Three moves.",
+        "count": 1
+      },
+      {
+        "value": "Token",
+        "count": 1
+      },
+      {
+        "value": "Transaction",
+        "count": 1
+      },
+      {
+        "value": "Transfers on Robinhood Chain are public. Receiva does not encrypt amounts.",
+        "count": 1
+      },
+      {
+        "value": "Transparency",
+        "count": 4
+      },
+      {
+        "value": "Trust",
+        "count": 1
+      },
+      {
+        "value": "TSLA",
+        "count": 1
+      },
+      {
+        "value": "tx",
+        "count": 2
+      },
+      {
+        "value": "tx ↗",
+        "count": 3
+      },
+      {
+        "value": "Unlock",
+        "count": 1
+      },
+      {
+        "value": "Unlock your hood.",
+        "count": 1
+      },
+      {
+        "value": "Usage numbers on receiva.xyz",
+        "count": 1
+      },
+      {
+        "value": "Use a regular wallet (MetaMask, Rabby, Phantom). Smart-contract wallets may produce different signatures each time.",
+        "count": 1
+      },
+      {
+        "value": "Verify it yourself in 60 seconds",
+        "count": 1
+      },
+      {
+        "value": "Verify it.",
+        "count": 1
+      },
+      {
+        "value": "Verify this address before you buy. We only post it here and on",
+        "count": 1
+      },
+      {
+        "value": "Visible on Blockscout like any transfer.",
+        "count": 1
+      },
+      {
+        "value": "W",
+        "count": 1
+      },
+      {
+        "value": "Wallet",
+        "count": 1
+      },
+      {
+        "value": "What does $RECEIVA do?",
+        "count": 1
+      },
+      {
+        "value": "What if receiva.xyz goes offline?",
+        "count": 1
+      },
+      {
+        "value": "What the chain sees",
+        "count": 1
+      },
+      {
+        "value": "What the hood hides.",
+        "count": 1
+      },
+      {
+        "value": "What the sender sees",
+        "count": 1
+      },
+      {
+        "value": "Where you withdraw to",
+        "count": 1
+      },
+      {
+        "value": "Which wallets work?",
+        "count": 1
+      },
+      {
+        "value": "Who pays gas to withdraw a token?",
+        "count": 1
+      },
+      {
+        "value": "Who received",
+        "count": 1
+      },
+      {
+        "value": "Why",
+        "count": 1
+      },
+      {
+        "value": "why both",
+        "count": 1
+      },
+      {
+        "value": "Withdraw",
+        "count": 2
+      },
+      {
+        "value": "Withdraw →",
+        "count": 1
+      },
+      {
+        "value": "Withdraw anywhere",
+        "count": 1
+      },
+      {
+        "value": "Withdraw gas for recipient",
+        "count": 1
+      },
+      {
+        "value": "Withdraw to your main wallet and the link is back.",
+        "count": 1
+      },
+      {
+        "value": "Withdrawal destination",
+        "count": 1
+      },
+      {
+        "value": "withdrawals currently use a small amount of ETH sent along by the payer. A relayer is next.",
+        "count": 1
+      },
+      {
+        "value": "Withdrawing to your main wallet links that payment to it. Withdraw to a fresh wallet to stay hidden.",
+        "count": 1
+      },
+      {
+        "value": "X · @receiva",
+        "count": 1
+      },
+      {
+        "value": "You do not need $RECEIVA to use Receiva. The app, the Router and your keys work the same with or without it. Not financial advice.",
+        "count": 1
+      },
+      {
+        "value": "You pay to",
+        "count": 1
+      },
+      {
+        "value": "Your browser checks every public announcement with your viewing key. The ones that light up are yours. Move them wherever you choose.",
+        "count": 1
+      },
+      {
+        "value": "Your browser derives the keys from that signature. They never leave this tab.",
+        "count": 1
+      },
+      {
+        "value": "Your browser downloads every public announcement and checks each one with your viewing key. The server never learns which are yours.",
+        "count": 1
+      },
+      {
+        "value": "Your funds stay where they are. Announcements live on Robinhood Chain, and your keys come back from one signature, so any ERC-5564 tool can find and move them.",
+        "count": 1
+      },
+      {
+        "value": "Your Inbox finds each payment and moves it in one click, gas included by the sender. Send it to a fresh wallet to stay hooded.",
+        "count": 1
+      },
+      {
+        "value": "your key",
+        "count": 1
+      },
+      {
+        "value": "Your keys",
+        "count": 1
+      },
+      {
+        "value": "Your keys come from your wallet's signature of this exact text. Signing it costs nothing and authorizes nothing. If any site asks you to sign it, it can derive your Receiva keys, so sign it only on receiva.xyz.",
+        "count": 1
+      },
+      {
+        "value": "Your link is long until you register the short link above. Register first for a bio-friendly link.",
+        "count": 1
+      },
+      {
+        "value": "Your private receive link",
+        "count": 1
+      },
+      {
+        "value": "Your Receiva link carries public receive keys, not your wallet. Senders pay the link. Your statement locks away.",
+        "count": 1
+      },
+      {
+        "value": "Your short link",
+        "count": 1
+      },
+      {
+        "value": "Your wallet",
+        "count": 1
+      },
+      {
+        "value": "Your wallet in the payment",
+        "count": 1
+      },
+      {
+        "value": "Your wallet is a public statement.",
+        "count": 1
+      },
+      {
+        "value": "Your wallet signs a fixed message. No gas, no transaction.",
+        "count": 1
+      },
+      {
+        "value": "your wallet.",
+        "count": 1
+      },
+      {
+        "value": "yours",
+        "count": 1
+      }
+    ],
+    "hiddenText": [],
+    "attributes": [
+      {
+        "name": "href",
+        "value": "/",
+        "count": 4
+      },
+      {
+        "name": "href",
+        "value": "/#faq",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "/#how",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "/inbox",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "/receive",
+        "count": 7
+      },
+      {
+        "name": "href",
+        "value": "/send",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "/transparency",
+        "count": 5
+      },
+      {
+        "name": "href",
+        "value": "#faq",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#how",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#proof",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#token",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://eips.ethereum.org/EIPS/eip-5564",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://eips.ethereum.org/EIPS/eip-6538",
+        "count": 1
+      },
+      {
+        "name": "placeholder",
+        "value": "0.00",
+        "count": 2
+      },
+      {
+        "name": "placeholder",
+        "value": "0x… (a fresh wallet keeps you hidden)",
+        "count": 1
+      },
+      {
+        "name": "placeholder",
+        "value": "Invoice #12 · design work",
+        "count": 1
+      },
+      {
+        "name": "placeholder",
+        "value": "receiva.xyz/pay",
+        "count": 1
+      },
+      {
+        "name": "placeholder",
+        "value": "Search NVDA, Tesla… or paste 0x token address",
+        "count": 1
+      },
+      {
+        "name": "src",
+        "value": "/assets",
+        "count": 10
+      },
+      {
+        "name": "title",
+        "value": "Inbox",
+        "count": 1
+      },
+      {
+        "name": "title",
+        "value": "Receive",
+        "count": 1
+      },
+      {
+        "name": "to",
+        "value": "/inbox",
+        "count": 2
+      },
+      {
+        "name": "to",
+        "value": "/receive",
+        "count": 1
+      },
+      {
+        "name": "to",
+        "value": "/send",
+        "count": 1
+      }
+    ],
+    "bindings": [
+      {
+        "kind": "asset",
+        "expr": "`/assets",
+        "count": 1
+      },
+      {
+        "kind": "asset",
+        "expr": "w.info.icon",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "`/assets",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "`${cfg.explorer}/address/${cfg.router}?tab=contract`",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "`${cfg.explorer}/address/${s.result.stealth}`",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "`${cfg.explorer}/tx/${s.result.tx}`",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "`${ex}/tx/${t.x}`",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "`https://robinhoodchain.blockscout.com/address/${it.addr}`",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "addr('announcer')",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "addr('registry')",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "addr('router')",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "app.request.amount",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "app.request.memo",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "ca ? `https://dexscreener.com/robinhood/${ca.toLowerCase()}` : undefined",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "ca ? `https://www.ponsfamily.com/launchpad/${ca.toLowerCase()}` : undefined",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "cfg.github",
+        "count": 9
+      },
+      {
+        "kind": "attr",
+        "expr": "cfg.telegram",
+        "count": 4
+      },
+      {
+        "kind": "attr",
+        "expr": "cfg.x",
+        "count": 5
+      },
+      {
+        "kind": "attr",
+        "expr": "footRouter",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "link",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "link",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.announcer",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "links.burn1",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.burn2",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.dev",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.devBuy",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.dex",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "links.firstSendTx",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.firstStealth",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.firstWithdrawTx",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.pons",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "links.registry",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "links.router",
+        "count": 3
+      },
+      {
+        "kind": "attr",
+        "expr": "links.routerBalance",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.routerDeployTx",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "links.token",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "proof.firstSendTx ? tx(proof.firstSendTx) : '#'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "proof.firstStealth ? ex + '/address/' + proof.firstStealth : '#'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "proof.firstWithdrawTx ? tx(proof.firstWithdrawTx) : '#'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "proof.routerDeployTx ? tx(proof.routerDeployTx) : '#'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "reqLink",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "s.amount",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "w.info.icon",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "a.name",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "a.symbol",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ago(t.t)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "amountView(it).shown",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "amountView(it).sym",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "app.account ? short(app.account) : 'Connect wallet'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "app.keys.metaAddress",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "app.request.asset.symbol",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "app.request.memo.length",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "asset.symbol.slice(0, 4)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "badge",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "busy ? 'Withdrawing…' : 'Withdraw'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ca ? 'CA' : 'LAUNCH'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ca ? short(ca) : '19 Oct · 13:00 UTC'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ca ? short(ca) + ' ↗' : '—'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ca || 'Appears here at launch'",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "cfg.announcer",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "cfg.gasTipEth",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "cfg.registry",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "cfg.router || 'Deploying'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "countdown.main",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "countdown.small",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "data.value ? fmtEth(data.value.vol24Eth) + ' ETH' : '—'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "data.value?.mcEth ? fmtEth(data.value.mcEth) + ' ETH' : '—'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "data.value?.priceUsd ? '$' + Number(data.value.priceUsd).toPrecision(3) : '—'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "error",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "extraStocks",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtAmount(amt, item.token.decimals)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtAmount(s.balance, s.asset.decimals)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtEth(t.q)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtNum(data.value?.buys)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtNum(data.value?.sells)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtNum(data.value?.supply)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtNum(data.value?.trades24)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtNum(T.devBurned)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtTime(proof.routerDeployedAt)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "fmtUsd(data.value?.mcUsd)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('$10,135.37') : '$10,135.37'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('$13,420.08') : '$13,420.08'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('$48,212.40') : '$48,212.40'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('$6,903.21') : '$6,903.21'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('$7,941.30') : '$7,941.30'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('$9,812.44') : '$9,812.44'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('118.40') : '118.40'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('27.75') : '27.75'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('31.02') : '31.02'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('4.120') : '4.120'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('42.18') : '42.18'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('from 0x51C7…2a7F') : 'from 0x51C7…2a7F'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "hooded ? mask('to 0x8366…0951') : 'to 0x8366…0951'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ib.err",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ib.scanned.toLocaleString('en-US')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ib.syncing ? 'Looking under every hood…' : 'Nothing yet. Share your link from Receive.'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "ib.syncing ? 'Scanning' : 'Scanned'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "it.loaded && !amountView(it).has ? ' · withdrawn' : ''",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.token.symbol",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "items.length",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "label",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "lead",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "link.replace(/^https?:\\/\\//, '')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "MEMO_MAX",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "msg",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "note",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "progressPct",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "proofTime('firstSendAt', '18 Oct · 20:45 UTC')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "proofTime('firstWithdrawAt', '18 Oct · 20:45 UTC')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "proofTime('routerDeployedAt', '18 Oct · 20:44 UTC')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "r.toUpperCase()",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "regError",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "registering ? 'Confirm in wallet…' : (app.keyMismatch ? 'Re-register these keys' : 'Register short link · one transaction')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "reqLink.replace(/^https?:\\/\\//, '')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "routerBalance",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.asset.symbol",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.error || 'Amounts and your wallet stay public. Only the link between this payment and the recipient is hidden.'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.req.amount",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.req.memo",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.resolved.text",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.result.amount",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.result.symbol",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.symbol",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.symbol.slice(0, 4)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "senderAddr",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "sending ? 'Release to put it back' : 'Hold to see what a sender sees'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(app.account)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(ca)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(cfg.announcer)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(cfg.registry)",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(cfg.router)",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(custom, 6)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(it.addr)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(s.result.stealth, 6)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(s.result.tx, 6)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "short(t.w)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "snippets[k]",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stats.announcements == null ? '—' : stats.announcements.toLocaleString('en-US')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stats.head == null ? '—' : stats.head.toLocaleString('en-US')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stats.viaReceiva == null ? '—' : stats.viaReceiva.toLocaleString('en-US')",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "status",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "statusLive ? 'Live on Pons' : 'Launch 19 Oct · 13:00 UTC'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stealthAddr",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "T.creatorTaxBps ? (T.creatorTaxBps / 100).toFixed(0) : 2",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "t.s ? 'Buy' : 'Sell'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "timeAgo(it.t)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tip.price",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tip.side",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tip.time",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "title",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tracked",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "unlocking ? 'Check your wallet…' : 'Sign to unlock'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "w.info.name",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "x.a",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "`${cfg.explorer}/address/${cfg.router}?tab=contract`",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "`${cfg.explorer}/address/${s.result.stealth}`",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "`${cfg.explorer}/tx/${s.result.tx}`",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "`${ex}/tx/${t.x}`",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "`https://robinhoodchain.blockscout.com/address/${it.addr}`",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "addr('announcer')",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "addr('registry')",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "addr('router')",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "ca ? `https://dexscreener.com/robinhood/${ca.toLowerCase()}` : undefined",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "ca ? `https://www.ponsfamily.com/launchpad/${ca.toLowerCase()}` : undefined",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "cfg.github",
+        "count": 9
+      },
+      {
+        "kind": "link",
+        "expr": "cfg.telegram",
+        "count": 4
+      },
+      {
+        "kind": "link",
+        "expr": "cfg.x",
+        "count": 5
+      },
+      {
+        "kind": "link",
+        "expr": "footRouter",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "link",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.announcer",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "links.burn1",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.burn2",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.dev",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.devBuy",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.dex",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "links.firstSendTx",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.firstStealth",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.firstWithdrawTx",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.pons",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "links.registry",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "links.router",
+        "count": 3
+      },
+      {
+        "kind": "link",
+        "expr": "links.routerBalance",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.routerDeployTx",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "links.token",
+        "count": 2
+      },
+      {
+        "kind": "link",
+        "expr": "proof.firstSendTx ? tx(proof.firstSendTx) : '#'",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "proof.firstStealth ? ex + '/address/' + proof.firstStealth : '#'",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "proof.firstWithdrawTx ? tx(proof.firstWithdrawTx) : '#'",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "proof.routerDeployTx ? tx(proof.routerDeployTx) : '#'",
+        "count": 1
+      },
+      {
+        "kind": "model",
+        "expr": "dest",
+        "count": 1
+      },
+      {
+        "kind": "model",
+        "expr": "query",
+        "count": 1
+      },
+      {
+        "kind": "text",
+        "expr": "qrHtml",
+        "count": 1
+      },
+      {
+        "kind": "text",
+        "expr": "reqQrHtml",
+        "count": 1
+      }
+    ],
+    "events": [
+      {
+        "event": "click",
+        "handler": "$emit('pick', w)",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "app.badge = 'dark'",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "app.badge = 'light'",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "copy(ca, 'Contract address copied')",
+        "count": 4
+      },
+      {
+        "event": "click",
+        "handler": "copy(link, 'Link copied')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "copy(reqLink, 'Request link copied')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "copy(snippets[k], 'Copied')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "doRegister",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "doUnlock",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "emit('close')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "go",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "onBackdrop",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "onWalletClick",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "openModal({ type: 'wallet' })",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "openModal({ type: 'withdraw', item: it })",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "pick(a)",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "pickAsset",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "pickCustom",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "pickRequestAsset",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "resetSendResult",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "setMax",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "setRange(r)",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "shareLink",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "shareReq",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toggleQr",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toggleReqQr",
+        "count": 1
+      },
+      {
+        "event": "close",
+        "handler": "$emit('close')",
+        "count": 3
+      },
+      {
+        "event": "close",
+        "handler": "closeModal",
+        "count": 3
+      },
+      {
+        "event": "input",
+        "handler": "onAmount",
+        "count": 1
+      },
+      {
+        "event": "input",
+        "handler": "onDest",
+        "count": 1
+      },
+      {
+        "event": "input",
+        "handler": "setRequestAmount($event.target.value)",
+        "count": 1
+      },
+      {
+        "event": "input",
+        "handler": "setRequestMemo($event.target.value)",
+        "count": 1
+      },
+      {
+        "event": "keydown",
+        "handler": "holdKey",
+        "count": 1
+      },
+      {
+        "event": "keyup",
+        "handler": "holdKeyUp",
+        "count": 1
+      },
+      {
+        "event": "submit",
+        "handler": "submit",
+        "count": 1
+      }
+    ],
+    "links": [
+      {
+        "kind": "href",
+        "target": "/",
+        "count": 4
+      },
+      {
+        "kind": "href",
+        "target": "/#faq",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "/#how",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "/inbox",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "/receive",
+        "count": 7
+      },
+      {
+        "kind": "href",
+        "target": "/send",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "/transparency",
+        "count": 5
+      },
+      {
+        "kind": "href",
+        "target": "#faq",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#how",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#proof",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#token",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://eips.ethereum.org/EIPS/eip-5564",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://eips.ethereum.org/EIPS/eip-6538",
+        "count": 1
+      },
+      {
+        "kind": "to",
+        "target": "/inbox",
+        "count": 2
+      },
+      {
+        "kind": "to",
+        "target": "/receive",
+        "count": 1
+      },
+      {
+        "kind": "to",
+        "target": "/send",
+        "count": 1
+      }
+    ],
+    "assets": [
+      {
+        "kind": "src",
+        "value": "/assets",
+        "count": 10
+      }
+    ],
+    "forms": [
+      {
+        "tag": "input",
+        "name": "",
+        "type": "",
+        "count": 6
+      }
+    ],
+    "i18n": [],
+    "i18nKeys": [],
+    "i18nFiles": [],
+    "api": [],
+    "env": []
+  },
+  "contentContractHash": "8e2fd3550fcae3675baf63d0dc1634aceaddd87f7f2987180c4982ca132428f8"
+}

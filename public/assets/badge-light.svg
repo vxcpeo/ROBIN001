@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 48" width="232" height="48" role="img" aria-label="Receiva logo">
+  <title>Receiva logo</title>
+  <rect x="4.32" y="4.32" width="39.36" height="39.36" rx="9.45" fill="#ff0000"/>
+  <circle cx="35" cy="13.8" r="2.4" fill="#ffffff" opacity="0.9"/>
+  <text x="24" y="30.3" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="20.5" font-weight="700" fill="#ffffff">R</text>
+  <text x="52.3" y="30.7" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0a0b0d" letter-spacing="0.2">Receiva</text>
+</svg>

@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-10T07:12:29.470Z",
+  "project": {
+    "root": "E:/workspace/chuangye/ROBIN/ROBIN001/website",
+    "name": "receiva-website",
+    "baseUrl": "http://127.0.0.1:4317/"
+  },
+  "passed": true,
+  "thresholds": {
+    "maxStructureSimilarity": 0.5,
+    "maxLandmarkSimilarity": 0.68,
+    "maxClassOverlap": 0.1,
+    "minAccentDistance": 30,
+    "maxContrastFailures": 0,
+    "maxAxeSerious": 0
+  },
+  "gates": {
+    "sourceContract": {
+      "passed": true,
+      "issues": [],
+      "warnings": [
+        "attributes: \"src=/assets\" count increased 10 -> 12",
+        "assets: \"src:/assets\" count increased 10 -> 12"
+      ],
+      "hash": "4a0ba305aba98ae253d8dce660581f1103d1ee56248d1cfc49a8ecc375f6ce9d"
+    },
+    "skeleton": {
+      "passed": true,
+      "original": {
+        "id": "sidebar-workspace",
+        "family": "shell",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": false,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
+      "current": {
+        "id": "orbital",
+        "family": "spatial",
+        "traits": {
+          "sidebar": true,
+          "topbar": false,
+          "cards": true,
+          "hero": true,
+          "table": true,
+          "grid": true,
+          "tabs": true,
+          "modal": true,
+          "charts": true,
+          "sticky": true,
+          "orbital": true,
+          "terminal": true,
+          "bento": false,
+          "ticker": false,
+          "gallery": false
+        }
+      },
+      "accent": {
+        "original": "#067a4e",
+        "current": "#ff0000",
+        "deltaE": 130.7,
+        "min": 30
+      }
+    },
+    "pages": [
+      {
+        "route": "/",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [],
+        "structure": {
+          "fingerprintSimilarity": 0.347,
+          "landmarkSimilarity": 0.375,
+          "classOverlap": 0.012
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 57,
+              "total": 80
+            },
+            "current": {
+              "tokens": 57,
+              "total": 80
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/home-desktop.png",
+          "mobile": "current/home-mobile.png"
+        }
+      },
+      {
+        "route": "/app",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.312,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.022
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 0,
+              "total": 0
+            },
+            "current": {
+              "tokens": 0,
+              "total": 0
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [
+            "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+          ],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/app-desktop.png",
+          "mobile": "current/app-mobile.png"
+        }
+      },
+      {
+        "route": "/app/",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.312,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.022
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 0,
+              "total": 0
+            },
+            "current": {
+              "tokens": 0,
+              "total": 0
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [
+            "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+          ],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/app-desktop.png",
+          "mobile": "current/app-mobile.png"
+        }
+      },
+      {
+        "route": "/inbox",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.312,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.022
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 0,
+              "total": 0
+            },
+            "current": {
+              "tokens": 0,
+              "total": 0
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [
+            "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+          ],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/inbox-desktop.png",
+          "mobile": "current/inbox-mobile.png"
+        }
+      },
+      {
+        "route": "/pay/:recipient",
+        "passed": true,
+        "skipped": true,
+        "failures": [],
+        "warnings": [],
+        "structure": {},
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {}
+        },
+        "screenshots": {}
+      },
+      {
+        "route": "/receive",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.312,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.022
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 0,
+              "total": 0
+            },
+            "current": {
+              "tokens": 0,
+              "total": 0
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [
+            "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+          ],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/receive-desktop.png",
+          "mobile": "current/receive-mobile.png"
+        }
+      },
+      {
+        "route": "/send",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.243,
+          "landmarkSimilarity": 0.4,
+          "classOverlap": 0.016
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 0,
+              "total": 0
+            },
+            "current": {
+              "tokens": 0,
+              "total": 0
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [
+            "mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+          ],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/send-desktop.png",
+          "mobile": "current/send-mobile.png"
+        }
+      },
+      {
+        "route": "/transparency",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [],
+        "structure": {
+          "fingerprintSimilarity": 0.073,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.017
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 8,
+              "total": 9
+            },
+            "current": {
+              "tokens": 8,
+              "total": 9
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/transparency-desktop.png",
+          "mobile": "current/transparency-mobile.png"
+        }
+      }
+    ]
+  },
+  "failures": [],
+  "warnings": [
+    "attributes: \"src=/assets\" count increased 10 -> 12",
+    "assets: \"src:/assets\" count increased 10 -> 12",
+    "/app: mobile nav: 1 baseline target(s) no longer visible (/transparency)",
+    "/app/: mobile nav: 1 baseline target(s) no longer visible (/transparency)",
+    "/inbox: mobile nav: 1 baseline target(s) no longer visible (/transparency)",
+    "/receive: mobile nav: 1 baseline target(s) no longer visible (/transparency)",
+    "/send: mobile nav: 1 baseline target(s) no longer visible (/transparency)"
+  ],
+  "baseline": {
+    "generatedAt": "2026-11-10T06:49:08.082Z",
+    "routes": [
+      "/",
+      "/app",
+      "/app/",
+      "/inbox",
+      "/pay/:recipient",
+      "/receive",
+      "/send",
+      "/transparency"
+    ]
+  }
+}

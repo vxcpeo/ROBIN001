@@ -85,9 +85,29 @@ Project settings:
 
 A second `vercel.json` sits at the repository root with the same rewrite, for the case where the Vercel project uses the repository root as its Root Directory and sets the build command to `cd website && npm install && npm run build` with output `website/dist`.
 
-The optional indexer (`server/server.mjs`) is not deployed here. On Vercel `/api/*` has no handler, so `src/lib/runtime.js` falls back to the bundled `public/fallback/*.json` snapshots: the counters and token chart render, but they are a snapshot rather than live data.
+The optional indexer (`server/server.mjs`) is not deployed here. On Vercel `/api/token` is served by the serverless function in [`api/token.js`](api/token.js); the landing counters still read `public/fallback/stats.json`.
 
 Verify a deployment by opening `https://<domain>/receive` directly, not by clicking through from `/` — a hard load is what the rewrite covers.
+
+## Live data
+
+`GET /api/token` ([`api/token.js`](api/token.js)) builds the $RECEIVA snapshot from the chain on demand instead of trusting the bundled file:
+
+| Field | Source |
+|---|---|
+| `series`, `recent`, `vol24Eth`, `trades24`, `buys`, `sells` | `eth_getLogs` for the Pons curve's buy/sell events, from `token.launchBlock` to head |
+| `priceEth`, `reservesEth`, `reservesToken` | `eth_call` `getReserves()` on the curve |
+| `supply`, `burned` | `eth_call` `totalSupply()` on the token |
+| `trackedQuote`, `progress`, `graduated` | `eth_call` on the curve |
+| `ethUsd`, `priceUsd`, `mcUsd`, `mcEth` | ETH/USD spot from Coinbase, then Kraken, then CoinGecko |
+
+The response carries `cache-control: public, s-maxage=20, stale-while-revalidate=60`, so Vercel's edge serves it and the chain is read once per window rather than once per visitor. If the function errors or is not deployed, `src/lib/runtime.js` falls back to `public/fallback/token.json`.
+
+`api/token.js` reads `public/config.json` (`token.ca`, `token.curve`, `token.launchBlock`, `token.launchSupply`, `token.graduationEth`) and falls back to embedded copies of those values; `vercel.json` includes the file in the function bundle. This is why the Root Directory must be `website`: that is what turns `website/api/` into `/api/*`. If the project root is the repository root instead, copy `api/` there (and keep the `includeFiles` path pointed at `public/config.json`).
+
+The "Funds held by Receiva" panel needs no function: the browser reads `eth_getBalance` on `config.router` from the RPC list in `config.json` and shows the block it read. As of writing the Router holds `0` — that is the real value, and the block marker under the number moves.
+
+Not live yet: the landing counters (`Payments via Receiva Router`, `ERC-5564 payments · all apps`, `Latest block`) still come from `public/fallback/stats.json`. Counting every announcement means scanning about 94M blocks from `startBlock`; run `npm start` (the indexer keeps state in `website/.data/`) or add an `/api/stats` backed by persistent storage for live counters.
 
 
 ## Project layout
